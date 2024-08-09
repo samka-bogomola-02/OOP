@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/calculator")
 public class CalculatorController {
+
     private CalculatorService calculatorService;
     public CalculatorController(CalculatorService calculatorService){
         this.calculatorService = calculatorService;
