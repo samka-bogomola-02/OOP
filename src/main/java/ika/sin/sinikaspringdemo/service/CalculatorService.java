@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Component
 public class CalculatorService {
+
     public String calculator(){
         return "<b>Добро пожаловать в калькулятор</b>";
     }
