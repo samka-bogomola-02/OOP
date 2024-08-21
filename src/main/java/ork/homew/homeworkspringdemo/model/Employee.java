@@ -4,7 +4,7 @@ import java.util.Objects;
 public class Employee {
     private final String name;
     private final String lastName;
-    public Employee(String name, String lastName){
+    public Employee(String name, String lastName) {
         this.name = name;
         this.lastName = lastName;
     }
