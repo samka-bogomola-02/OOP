@@ -14,7 +14,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 @Service
-public class EmployeeServiceImpl implements EmployeeService {
+public class EmployeeServiceImpl implements EmployeeService{
     private final List<Employee> employeeList;
     public EmployeeServiceImpl() {
         this.employeeList = new ArrayList<>();
