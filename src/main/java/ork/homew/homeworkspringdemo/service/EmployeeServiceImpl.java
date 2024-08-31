@@ -20,7 +20,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee add(String name, String lastName) {
-        Employee employee = new Employee(name, lastName);
+        Employee employee = new Employee(name, lastName, 1, 300000);
         if (employees.containsKey(employee.getFullName())) {
             throw new EmployeeAlreadyAddedException();
         }
@@ -30,7 +30,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee remove(String name, String lastName) {
-        Employee employee = new Employee(name, lastName);
+        Employee employee = new Employee(name, lastName, 1, 300000);
         if (employees.containsKey(employee.getFullName())) {
             return employees.remove(employee.getFullName());
         }
@@ -39,7 +39,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee find(String name, String lastName) {
-        Employee employee = new Employee(name, lastName);
+        Employee employee = new Employee(name, lastName, 1, 300000);
         if (employees.containsKey(employee.getFullName())) {
             return employees.get(employee.getFullName());
         }
