@@ -16,7 +16,7 @@ public class Employee {
         this.departmentId = departmentId;
         this.salary = salary;
     }
-    private String validateStringParam(String string) {
+    private String validateStringParam(String string){
         if (!StringUtils.isAlpha(string)) {
             throw new RuntimeException("The first letter must be capitalized: " + string);
         }
