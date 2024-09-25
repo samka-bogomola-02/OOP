@@ -23,5 +23,4 @@ public class CartServiceImpl implements CartService {
     public List<Integer> getItems() {
         return cart.getItems();
     }
-
 }
