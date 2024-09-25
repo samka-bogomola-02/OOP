@@ -3,7 +3,6 @@ package ola.samkabogom.basketspringdemo.service;
 import ola.samkabogom.basketspringdemo.repository.Cart;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
-
 import java.util.List;
 
 @Service
