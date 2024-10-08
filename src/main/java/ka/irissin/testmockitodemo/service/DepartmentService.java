@@ -1,4 +1,5 @@
 package ka.irissin.testmockitodemo.service;
+
 import ka.irissin.testmockitodemo.exception.EmployeeNotFoundException;
 
 import model.Employee;
@@ -39,7 +40,8 @@ public class DepartmentService {
                 .max()
                 .orElseThrow(EmployeeNotFoundException::new);
     }
-    public List<Employee>getAll(int department) {
+
+    public List<Employee> getAll(int department) {
         return employeeService.getAll().stream()
                 .filter(e -> e.getDepartment() == department)
                 .collect(Collectors.toList());
